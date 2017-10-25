@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>港股</title>
+    <link rel="stylesheet" href="public/css/gang.css">
+    <link rel="stylesheet" href="cssreset-min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="h_first">
+            <div class="nav1 w">
+                <img src="public/images/g_logo.png" class="fl">
+                <a href="http://stock.10jqka.com.cn/" target="_blank" ta_fid="stock">股票</a>
+                <a href="http://news.10jqka.com.cn/" target="_blank" ta_fid="news">财经</a>
+                <a href="http://master.10jqka.com.cn/" target="_blank" ta_fid="master">名家</a>
+                <a href="http://yuanchuang.10jqka.com.cn/" target="_blank" ta_fid="yuanchuang">原创</a>
+                <a href="http://stockpage.10jqka.com.cn/" target="_blank" ta_fid="gegu">个股</a>
+                <a href="http://q.10jqka.com.cn/" target="_blank" ta_fid="q">行情</a>
+                <a href="http://data.10jqka.com.cn/" target="_blank" ta_fid="data">数据</a>
+                <a href="http://t.10jqka.com.cn/" target="_blank" ta_fid="sns">圈子</a>
+                <a href="http://www.liejin99.com/#refCountId=R_5795d4d5_59" target="_blank" ta_fid="liejin">猎金</a>
+                <a href="http://fund.10jqka.com.cn/" target="_blank" ta_fid="fund">基金</a>
+                <div class="fr login_part "><a href="javascript:;" class="fastguide fr">快捷导航</a>
+                    <div class="unloginbox fr">
+                        <a class="login" href="http://upass.10jqka.com.cn/login?redir=HTTP_REFERER" target="_blank">登录</a>
+                        <a class="register" href="http://upass.10jqka.com.cn/register" target="_blank">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-nav">
+            <div class="w">
+                <div class="search_box fr">
+                    <input type="submit" class="search_btn fr" value="搜索">
+                    <input type="text" autocomplete="off" placeholder="代码、简称or关键词" class="search_input f14 placeholder" id="search_input" onfocus="clearSearchInput(this.id)">
+                </div>
+                <ul class="nav-list fl">
+                    <li class="cur"><a href="#" target="_blank">港股首页</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/ggfx_list/" target="_blank">盘面综述</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/ggdt_list/" target="_blank">公司新闻</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/ggyj_list/" target="_blank">研报精选</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/ahdt_list/" target="_blank">AH动态</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/wlzx_list/" target="_blank">权证</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/ggxg_list/" target="_blank">新股</a></li>
+                    <li><a href="http://stock.10jqka.com.cn/hks/xuetang/" target="_blank">港股学堂</a></li>
+                    <li><a href="http://q.10jqka.com.cn/hk/" target="_blank">行情中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <img src="public/images/指数.png" alt="">
+        <div class="sidebar fl">
+            <div class="white">
+                <div class="hk-side zxg log-block">
+                    <div class="haedside">
+                        <h3 class="yah">
+                            <a href="http://stock.10jqka.com.cn/my/" target="_blank">我的自选</a>
+                        </h3>
+                    </div>
+                    <!--  未登录状态 -->
+                    <div id="zxlogin">
+                        <div>
+                            <span class="zxg-login fr">
+                                    <a href="javascript:void(0);" class="loginplugin">登录</a>
+                                    <a href="http://i.10jqka.com.cn/register/index/" target="_blank">注册</a>
+                                </span>
+                            <div class="hot-stock"><span class="f14 yah">以下为热门自选股</span></div>
+                        </div>
+                        <table class="hk-table-1">
+                            <thead class="f12 c999 yah">
+                                <tr>
+                                    <th>名称</th>
+                                    <th class="tr">最新价</th>
+                                    <th class="tr">涨跌幅</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><a href="http://stockpage.10jqka.com.cn/00004/" target="_blank">九龙仓集</a></th>
+                                    <td class="tr hqred">69.75</td>
+                                    <td class="tr hqred">0.58%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="http://stockpage.10jqka.com.cn/00001/" target="_blank">长和</a></th>
+                                    <td class="tr hqgreen">100.80</td>
+                                    <td class="tr hqgreen">-0.40%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="http://stockpage.10jqka.com.cn/00005/" target="_blank">汇丰控股</a></th>
+                                    <td class="tr hqgreen">73.80</td>
+                                    <td class="tr hqgreen">-1.07%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="http://stockpage.10jqka.com.cn/00003/" target="_blank">香港中华</a></th>
+                                    <td class="tr hqgreen">14.76</td>
+                                    <td class="tr hqgreen">-1.07%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="http://stockpage.10jqka.com.cn/00002/" target="_blank">中电控股</a></th>
+                                    <td class="tr hqgreen">82.40</td>
+                                    <td class="tr hqgreen">-1.08%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="http://stockpage.10jqka.com.cn/00006/" target="_blank">电能实业</a></th>
+                                    <td class="tr hqgreen">68.00</td>
+                                    <td class="tr hqgreen">-2.83%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 大V观点 -->
+                    <div class="haedside">
+                        <h3 class="yah">
+                            <a href="http://stock.10jqka.com.cn/my/" target="_blank">大V观点</a>
+                        </h3>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="shakeWrap">
+                                <a href="http://master.10jqka.com.cn/20170818/c599752216.shtml" target="_blank" class="fl">
+                                    <img src="public/images/V1.jpg" alt="青石证券" width="44px" height="44px">
+                                </a>
+                                <div class="txt">
+                                    <a href="http://master.10jqka.com.cn/20170818/c599752216.shtml" target="_blank" class="fl">青石证券</a>
+                                    <br>
+                                    <a href="http://master.10jqka.com.cn/20170818/c599752216.shtml" target="_blank" class="c999">热度:27791</a>
+                                </div>
+                                <p class="f14"><a href="http://master.10jqka.com.cn/20170818/c599752216.shtml" target="_blank">青石证券港美股专家观点 | 短期调整将</a></p>
+                            </li>
+                            <br>
+                            <li class="shakeWrap">
+                                <a href="http://master.10jqka.com.cn/20170721/c599288296.shtml" target="_blank" class="fl">
+                                    <img src="./public/images/V2.jpg" alt="国京香港" width="44px" height="43px">
+                                </a>
+                                <div class="txt">
+                                    <a href="http://master.10jqka.com.cn/20170721/c599288296.shtml" target="_blank" class="f14">国京香港</a>
+                                    <br>
+                                    <a href="http://master.10jqka.com.cn/20170721/c599288296.shtml" target="_blank" class="c999">热度:26025</a>
+                                </div>
+                                <p class="f14"><a href="http://master.10jqka.com.cn/20170721/c599288296.shtml" target="_blank">2017.7.21想开了●财经要闻</a></p>
+                            </li>
+                            <br>
+                            <li class="shakeWrap">
+                                <a href="http://master.10jqka.com.cn/20170817/c599709304.shtml" target="_blank" class="fl">
+                                    <img src="./public/images/V3.jpg" width="44px" height="44px" alt="港股那点事">
+                                </a>
+                                <div class="txt">
+                                    <a href="http://master.10jqka.com.cn/20170817/c599709304.shtml" target="_blank" class="f14">港股那点事</a>
+                                    <br>
+                                    <a href="http://master.10jqka.com.cn/20170817/c599709304.shtml" target="_blank" class="c999">热度:127511</a>
+                                </div>
+                                <p class="f14"><a href="http://master.10jqka.com.cn/20170817/c599709304.shtml" target="_blank">奇点临近 谁在下注下一个AI时代</a></p>
+                            </li>
+                            <br>
+                            <li class="shakeWrap">
+                                <a href="http://master.10jqka.com.cn/20170818/c599721590.shtml" target="_blank" class="fl ">
+                                    <img src="./public/images/V4.jpg" width="44px" height="44px" alt="港股挖掘机">
+                                </a>
+                                <div class="txt">
+                                    <a href="http://master.10jqka.com.cn/20170818/c599721590.shtml" target="_blank" class="f14">港股挖掘机</a>
+                                    <br>
+                                    <a href="http://master.10jqka.com.cn/20170818/c599721590.shtml" target="_blank" class="c999">热度:54912</a>
+                                </div>
+                                <p class="f14"><a href="http://master.10jqka.com.cn/20170818/c599721590.shtml" target="_blank">智通港股解盘(8.17)︱市场上攻存隐忧</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main fl">
+            <div class="m_top">
+                <h2 class="bold yah">
+                    <a href="http://stock.10jqka.com.cn/20170818/c599719048.shtml" target="_blank">整顿股市 港交所让造壳行为成不可能        </a>
+                    <p class="f14 yah c666">中国证券网讯 “老千股”及“细价股”...</p>
+                </h2>
+            </div>
+            <div class="m_news">
+                <ul>
+                    <li>
+                        <a href=""><img src="./public/images/m_news1.png" alt=""></a>
+                        <div class="txt">
+                            <a href="http://stock.10jqka.com.cn/20170819/c599757993.shtml" target="_blank" class="item-tit f18 bold">调高销售目标36% 掌舵者小心驾驶后的龙湖式提速</a>
+                            <span class="fl">港股公司新闻</span>
+                            <span class="fr time">2017-08-19 07:16</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./public/images/m_news2.png" alt=""></a>
+                        <div class="txt">
+                            <a href="http://stock.10jqka.com.cn/20170819/c599758949.shtml" target="_blank" class="item-tit f18 bold">
+                        私有化再度延期 新世界百货内地市场颓势难掩                    </a>
+
+                            <span class="fl">港股公司新闻</span>
+                            <span class="fr time">2017-08-19 08:11</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./public/images/m_news3.png" alt=""></a>
+                        <div class="txt">
+                            <a href="http://stock.10jqka.com.cn/20170819/c599758148.shtml" target="_blank" class="item-tit f18 bold">
+                        联想七个季度以来首次亏损 CEO：移动业务正扭亏                    </a>
+
+                            <span class="fl">港股公司新闻</span>
+                            <span class="fr time">2017-08-19 07:25</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./public/images/m_news4.png" alt=""></a>
+                        <div class="txt">
+                            <a href="http://stock.10jqka.com.cn/20170819/c599757993.shtml" target="_blank" class="item-tit f18 bold">
+                        调高销售目标36% 掌舵者小心驾驶后的龙湖式提速                    </a>
+
+                            <span class="fl">港股公司新闻</span>
+                            <span class="fr time">2017-08-19 07:16</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./public/images/m_news5.png" alt=""></a>
+                        <div class="txt">
+                            <a href="http://stock.10jqka.com.cn/20170818/c599751577.shtml" target="_blank" class="item-tit f18 bold">
+                        兴业太古汇开业三个月 太古地产的上海故事远未讲完                    </a>
+
+                            <span class="fl">港股公司新闻</span>
+                            <span class="fr time">2017-08-18 22:05</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right fr">
+            <div class="r_top">
+                <div class="header1">
+                    <span class="first">港股涨幅排行</span>
+                    <span>港股跌幅排行</span>
+                </div>
+                <div class="J-tab ">
+                    <table class="hk-table-2">
+                        <thead>
+                            <tr>
+                                <th width="115">股票名称</th>
+                                <th width='50'>价格</th>
+                                <th width='55'>涨跌幅</th>
+                                <th width='50'>涨跌额</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody-h">
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0632/" target="_blank">东方明珠石油</a></td>
+                                <td class="hqred">0.19</td>
+                                <td class="hqred">33.80%</td>
+                                <td class="hqred">0.05</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK1609/" target="_blank">创建集团控股</a></td>
+                                <td class="hqred">0.66</td>
+                                <td class="hqred">24.53%</td>
+                                <td class="hqred">0.13</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0451/" target="_blank">协鑫新能源</a></td>
+                                <td class="hqred">0.43</td>
+                                <td class="hqred">19.18%</td>
+                                <td class="hqred">0.07</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK6869/" target="_blank">长飞光纤光缆</a></td>
+                                <td class="hqred">18.70</td>
+                                <td class="hqred">12.38%</td>
+                                <td class="hqred">2.06</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0092/" target="_blank">CHAMPION TECH</a></td>
+                                <td class="hqred">0.08</td>
+                                <td class="hqred">12.00%</td>
+                                <td class="hqred">0.01</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0906/" target="_blank">中粮包装</a></td>
+                                <td class="hqred">4.30</td>
+                                <td class="hqred">10.26%</td>
+                                <td class="hqred">0.40</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0080/" target="_blank">中国新经济投资</a></td>
+                                <td class="hqred">0.15</td>
+                                <td class="hqred">10.14%</td>
+                                <td class="hqred">0.01</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK2266/" target="_blank">黎氏企业</a></td>
+                                <td class="hqred">2.37</td>
+                                <td class="hqred">9.72%</td>
+                                <td class="hqred">0.21</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0730/" target="_blank">SHOUGA...</a></td>
+                                <td class="hqred">0.24</td>
+                                <td class="hqred">9.05%</td>
+                                <td class="hqred">0.02</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0612/" target="_blank">中国投资基金公司</a></td>
+                                <td class="hqred">2.17</td>
+                                <td class="hqred">9.04%</td>
+                                <td class="hqred">0.18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="header1">
+                    <span class="first">港股成交额排行</span>
+                    <span>港股成交量排行</span>
+                </div>
+                <div class="J-tab">
+                    <table class="hk-table-2">
+                        <thead>
+                            <tr>
+                                <th width="70">名称</th>
+                                <th class="tr" width="100">成交额(元)</th>
+                                <th class="tr" width="70">最新价</th>
+                                <th class="tr" width="70">涨跌幅</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody-h">
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0700/" target="_blank">腾讯控股</a></td>
+                                <td class="tr">79.19亿</td>
+                                <td class="tr">325.800</td>
+                                <td class=" tr hqgreen">-1.09%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK2318/" target="_blank">中国平安</a></td>
+                                <td class="tr">60.98亿</td>
+                                <td class="tr">60.200</td>
+                                <td class=" tr hqred">1.43%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0005/" target="_blank">汇丰控股</a></td>
+                                <td class="tr">21.23亿</td>
+                                <td class="tr">73.800</td>
+                                <td class=" tr hqgreen">-1.07%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK1398/" target="_blank">工商银行</a></td>
+                                <td class="tr">17.87亿</td>
+                                <td class="tr">5.480</td>
+                                <td class=" tr hqgreen">-2.14%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0939/" target="_blank">建设银行</a></td>
+                                <td class="tr">14.92亿</td>
+                                <td class="tr">6.510</td>
+                                <td class=" tr hqgreen">-1.66%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0941/" target="_blank">中国移动</a></td>
+                                <td class="tr">13.19亿</td>
+                                <td class="tr">86.400</td>
+                                <td class=" tr hqgreen">-0.12%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK0388/" target="_blank">香港交易</a></td>
+                                <td class="tr">11.95亿</td>
+                                <td class="tr">209.600</td>
+                                <td class=" tr hqgreen">-0.95%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK3988/" target="_blank">中国银行</a></td>
+                                <td class="tr">11.01亿</td>
+                                <td class="tr">3.850</td>
+                                <td class=" tr hqgreen">-1.79%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK2628/" target="_blank">中国人寿</a></td>
+                                <td class="tr">10.34亿</td>
+                                <td class="tr">23.150</td>
+                                <td class=" tr hqgreen">-1.28%</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://stockpage.10jqka.com.cn/HK1299/" target="_blank">友邦保险</a></td>
+                                <td class="tr">8.32亿</td>
+                                <td class="tr">58.250</td>
+                                <td class=" tr hqgreen">-1.02%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="http://news.10jqka.com.cn/tzz/" rel="nofollow">投资者关系</a><span class="ff">|</span>
+            <a href="http://news.10jqka.com.cn/20100105/c61833421.shtml" rel="nofollow">关于同花顺</a><span>|</span>
+            <a href="http://download.10jqka.com.cn/">股票软件</a><span>|</span>
+            <a href="http://www.10jqka.com.cn/ia/pass_buck.php" rel="nofollow">法律声明</a><span>|</span>
+            <a href="http://www.10jqka.com.cn/hexin_license.htm" rel="nofollow">运营许可</a><span>|</span>
+            <a href="http://www.10jqka.com.cn/modules.php?name=what&amp;page=cooperate" rel="nofollow">内容合作</a><span>|</span>
+            <a href="http://www.10jqka.com.cn/hexin_contact.htm" rel="nofollow">联系我们</a><span>|</span>
+            <a href="http://news.10jqka.com.cn/link.shtml" rel="nofollow">友情链接</a><span>|</span>
+            <a href="http://news.10jqka.com.cn/msg/" rel="nofollow">网友意见箱</a><span>|</span>
+            <a href="http://job.10jqka.com.cn/" rel="nofollow">招聘英才</a><span>|</span>
+            <a href="http://vote.10jqka.com.cn/webvote/suggest.html" rel="nofollow">用户体验计划</a>
+        </p>
+        <p class="c333">不良信息举报电话：(0571)88933003 举报邮箱：jubao@myhexin.com 增值电信业务经营许可证：B2-20080207</p>
+        <p class="c333">CopyrightHithink RoyalFlush Information Network Co.,Ltd. All rights reserved. 浙江核新同花顺网络信息有限股份有限公司版权所有</p>
+        <p class="c333"> ICP证：浙ICP备09003598号 证券投资咨询服务提供：浙江同花顺云软件有限公司 (中国证监会核发证书编号：ZX0050)</p>
+        <p class="c333"><img src="http://i.thsi.cn/images/hks/v3/police_03.png">浙公网安备 33011002011820号</p>
+    </div>
+</body>
+
+</html>

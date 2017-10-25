@@ -1,0 +1,195 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.w{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+// body{
+//         background-color: #F8F8F8;
+// }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .h_first{
+        width: 100%;
+        background-color: #F8F8F8;
+        .nav1{
+            height: 45px;
+            a{
+                .fl;
+                padding-left: 8px;
+                height: 45px;
+                width: 60px;
+                font-size: 12px;
+                line-height: 45px;
+                text-align: center;
+                color:#333333;
+                &:hover{
+                    background-color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .login_part{
+                a{
+                    .fr;
+                }
+            }
+        }
+    }
+    .h-nav{
+        background-color: #fff;
+        .nav-list{
+            .fl;
+            li{
+                .fl;
+                width: 80px;
+                overflow: hidden;
+                line-height: 58px;
+                text-align: center;
+                a{
+                    display: block;
+                    width: 64px;
+                    color:#333333;
+                    &:hover{
+                        border-bottom: 2px solid #EF4949;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .search_box{
+            padding-top: 17px;
+        }
+    }
+}
+.content{
+    padding-top: 100px;
+    .module-l{
+        width: 760px;
+        .mysite{
+            width: 760px;
+            overflow: hidden;
+            border-bottom: 1px solid #333;
+            font-size: 14px;
+            span{
+                font-size: 14px;
+            }
+            a{
+                color:#444444;
+                
+            }
+            .view_otherday{
+                .fr;
+            }
+        }
+        .list-con{
+            ul{
+                .fl;
+                width: 760px;
+                li{
+                    border-bottom: 1px solid #333333;
+                    .fl;
+                    overflow: hidden;
+                    margin: 10px 0px;
+                    padding-bottom: 20px;
+                    a{
+                        color:#888888;
+                        font-size: 14px;
+                    }
+                    .arc-title{
+                        width: 760px;
+                        line-height: 40px;
+                        a{
+                        font-size: 16px;
+                        color:#444444;
+                        }
+                        .fl;
+                        span{
+                            .fr;
+                        }
+                    }                   
+                }
+            }
+            .bottom-page{
+                padding-top: 20px;
+                text-align: center;
+                .fl;
+                width: 760px;
+                .num-container{
+                    .fl;
+                    padding-left: 30px;
+                    a{
+                        .fl;
+                        width: 20px;
+                        height: 20px;
+                        text-align: center;
+                        border-radius: 3px;
+                        color:#555555;
+                        margin-left: 10px;
+                    }
+                    .num{
+                        background-color: #EF4949;
+                        color:#fff;
+                    }
+                    .end{
+                        width: 50px;
+                    }
+                    span{
+                        .fl;
+                    }
+                    .next{
+                        width: 60px;
+                    }
+                }
+                span{
+                    .fl;
+                    margin-left:15px;
+                    input{
+                        // .fl;
+                        width: 40px;
+                    }
+                    a{
+                        color:#555555;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: #212121;
+    margin-top: 20px;
+    p{
+        line-height: 50px;
+        color: #999999;
+        font-size: 14px;
+        a{
+            color:#CCCCCC;
+            &:hover{
+                color:#CC3300;
+            }
+        }
+        span{
+            margin: 0 10px;
+        }
+    }
+}

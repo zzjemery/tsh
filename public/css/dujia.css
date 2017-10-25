@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.w {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.header .h_first {
+  width: 100%;
+  background-color: #F8F8F8;
+}
+.header .h_first .nav1 {
+  height: 45px;
+}
+.header .h_first .nav1 a {
+  float: left;
+  padding-left: 8px;
+  height: 45px;
+  width: 60px;
+  font-size: 12px;
+  line-height: 45px;
+  text-align: center;
+  color: #333333;
+}
+.header .h_first .nav1 a:hover {
+  background-color: #fff;
+  text-decoration: none;
+}
+.header .h_first .nav1 .login_part a {
+  float: right;
+}
+.header .h-nav {
+  background-color: #fff;
+}
+.header .h-nav .nav-list {
+  float: left;
+}
+.header .h-nav .nav-list li {
+  float: left;
+  width: 80px;
+  overflow: hidden;
+  line-height: 58px;
+  text-align: center;
+}
+.header .h-nav .nav-list li a {
+  display: block;
+  width: 64px;
+  color: #333333;
+}
+.header .h-nav .nav-list li a:hover {
+  border-bottom: 2px solid #EF4949;
+  text-decoration: none;
+}
+.header .h-nav .search_box {
+  padding-top: 17px;
+}
+.content {
+  padding-top: 100px;
+}
+.content .module-l {
+  width: 760px;
+}
+.content .module-l .mysite {
+  width: 760px;
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+}
+.content .module-l .mysite span {
+  font-size: 14px;
+}
+.content .module-l .mysite a {
+  color: #444444;
+}
+.content .module-l .mysite .view_otherday {
+  float: right;
+}
+.content .module-l .list-con ul {
+  float: left;
+  width: 760px;
+}
+.content .module-l .list-con ul li {
+  border-bottom: 1px solid #333333;
+  float: left;
+  overflow: hidden;
+  margin: 10px 0px;
+  padding-bottom: 20px;
+}
+.content .module-l .list-con ul li a {
+  color: #888888;
+  font-size: 14px;
+}
+.content .module-l .list-con ul li .arc-title {
+  width: 760px;
+  line-height: 40px;
+  float: left;
+}
+.content .module-l .list-con ul li .arc-title a {
+  font-size: 16px;
+  color: #444444;
+}
+.content .module-l .list-con ul li .arc-title span {
+  float: right;
+}
+.content .module-l .list-con .bottom-page {
+  padding-top: 20px;
+  text-align: center;
+  float: left;
+  width: 760px;
+}
+.content .module-l .list-con .bottom-page .num-container {
+  float: left;
+  padding-left: 30px;
+}
+.content .module-l .list-con .bottom-page .num-container a {
+  float: left;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  color: #555555;
+  margin-left: 10px;
+}
+.content .module-l .list-con .bottom-page .num-container .num {
+  background-color: #EF4949;
+  color: #fff;
+}
+.content .module-l .list-con .bottom-page .num-container .end {
+  width: 50px;
+}
+.content .module-l .list-con .bottom-page .num-container span {
+  float: left;
+}
+.content .module-l .list-con .bottom-page .num-container .next {
+  width: 60px;
+}
+.content .module-l .list-con .bottom-page span {
+  float: left;
+  margin-left: 15px;
+}
+.content .module-l .list-con .bottom-page span input {
+  width: 40px;
+}
+.content .module-l .list-con .bottom-page span a {
+  color: #555555;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #212121;
+  margin-top: 20px;
+}
+.footer p {
+  line-height: 50px;
+  color: #999999;
+  font-size: 14px;
+}
+.footer p a {
+  color: #CCCCCC;
+}
+.footer p a:hover {
+  color: #CC3300;
+}
+.footer p span {
+  margin: 0 10px;
+}
